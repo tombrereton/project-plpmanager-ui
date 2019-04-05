@@ -17,7 +17,7 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <nav class="navbar navbar-dark bg-primary sticky-top">
+    <nav class="shadow navbar navbar-dark bg-primary sticky-top">
         <a class="navbar-brand navbar-dark navbar-text text-white">PLP Manager / Co-ords 19632 / COM</a>
         <form class="form-inline ">
             <input class="form-control mr-sm-2" type="search" placeholder="Find product or group" aria-label="Search">
@@ -28,8 +28,20 @@
     <main class="flex-shrink-0">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="bg-white sidebar" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="col-md-3 d-none d-md-flex">
+                    <div class="bg-white sidebar" role="tablist" aria-orientation="vertical">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                COM / Overridden & Pending Changes
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">ALL / Published</a>
+                                <a class="dropdown-item" href="#">AU / Overridden</a>
+                                <a class="dropdown-item" href="#">ES / None</a>
+                            </div>
+                        </div>
+                        <hr>
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">
@@ -49,11 +61,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <h1 class="display-3">Rules</h1>
                     <div class="card my-3 bg-white shadow">
                         <div class="card-body">
-                            <a href="#" class="btn btn-success float-right">Edit</a>
+                            <a href="#" class="btn btn-success float-right"><i class="fas fa-pencil-alt"></i></a>
                             <p class="lead"><strong>'PIM Dress Type' is equal to 'Going Out Dresses'</strong></p>
                             <p>AND</p>
                             <p class="lead"><strong>'PIM Shop By Fit' is equal to 'Petite'</strong></p>
@@ -61,13 +73,13 @@
                     </div>
                     <div class="card my-3 bg-white shadow">
                         <div class="card-body">
-                            <a href="#" class="btn btn-success float-right">Edit</a>
+                            <a href="#" class="btn btn-success float-right"><i class="fas fa-pencil-alt"></i></a>
                             <p class="lead"><strong>'Test Colour' is equal to 'Blue'</strong></p>
                         </div>
                     </div>
                     <div class="card my-3 bg-white shadow">
                         <div class="card-body">
-                            <a href="#" class="btn btn-success float-right">Edit</a>
+                            <a href="#" class="btn btn-success float-right"><i class="fas fa-pencil-alt"></i></a>
                             <p class="lead"><strong>'PIM Dress Type' is equal to 'Going Out Dresses'</strong></p>
                             <p>AND</p>
                             <p class="lead"><strong>'PIM Shop By Fit' is equal to 'Petite'</strong></p>
@@ -76,14 +88,14 @@
                     <h1 class="display-3">Exclusions & Inclusion</h1>
                     <div class="card my-3 bg-white shadow">
                         <div class="card-body">
-                            <a href="#" class="btn btn-success float-right">Edit</a>
+                            <a href="#" class="btn btn-success float-right"><i class="fas fa-pencil-alt"></i></a>
                             <p class="lead">Items Included: <strong>45632</strong></p>
                             <p class="lead">Items Excluded: <strong>375</strong></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                </div>
+                <!-- <div class="col-md-3">
+                </div> -->
             </div>
         </div>
     </main>
